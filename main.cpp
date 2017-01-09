@@ -1,22 +1,23 @@
+//Note: this is a code sample to demonstrate capability of utilizing C++ technologies, SOIL and OpenGL library
+
 #include <iostream>
 #include <ctime>
 #include <cstdio>
 #include <string>
 #include <fstream>
-/*
+
 #include <SOIL.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 #include "Shader.h"
-*/
+
 #include "BaseAttributes.h"
 #include "Constants.h"
 
 using namespace std;
 
-/*
 //GLEW constants
 const GLuint WIDTH = 1024, HEIGHT = 600;
 glm::vec3 cameraPos = glm::vec3(3.0f, 0.0f, 0.0f);
@@ -76,6 +77,7 @@ int display(){
 
 	Shader shader = Shader("shader.vertshader", "shader.fragshader");
 
+	//vertices for boxes
 	GLfloat vertices[] = {
 		-0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
 		0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
@@ -265,7 +267,7 @@ int display(){
 
 	return 0;
 }
-*/
+
 
 int main(){
 	
@@ -321,11 +323,10 @@ std:clock_t start;
 		}
 	};
 	
-	//return display();
 	return 0;
 }
 
-/*
+
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -400,4 +401,3 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 	if (fov >= 45.0f)
 		fov = 45.0f;
 }
-*/
